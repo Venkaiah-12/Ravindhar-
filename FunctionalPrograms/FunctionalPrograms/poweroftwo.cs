@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FunctionalPrograms
 {
-    class poweroftwo
+    class PowerOfTwo
     {
         public static void powertwo()
         {

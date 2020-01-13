@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FunctionalPrograms
 {
-    class harmonic
+    class Harmonic
     {
         public static void  harmonicseries()
         {

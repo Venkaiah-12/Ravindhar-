@@ -4,16 +4,16 @@ using System.Text;
 
 namespace FunctionalPrograms
 {
-    class gambling
+    class Gambling
     {
         public static  void gambler()
         {
-            int n = Utility.userinputs();
-            int trails = Utility.userinputs();
+            int n = Utility.userInputs();
+            int trails = Utility.userInputs();
             int[] a = new int[trails];
             
-            int stake = Utility.userinputs();
-            int goal = Utility.userinputs();
+            int stake = Utility.userInputs();
+            int goal = Utility.userInputs();
           
             int wins = 0;      
            Utility.checkwin( wins,trails);

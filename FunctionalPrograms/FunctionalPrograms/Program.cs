@@ -15,33 +15,65 @@ namespace FunctionalPrograms
                     ReplaceString.ReplaceStringMethod();
                     break;
                 case 2:
-                    flipcoin.flippercentage();
+                    Flipcoin.flippercentage();
                     break;
                 case 3:
-                    leapyear.foundyear();
+                    LeapYear.foundyear();
                     break;
                 case 4:
-                    poweroftwo.powertwo();
+                    PowerOfTwo.powertwo();
                     break;
                 case 5:
-                    harmonic.harmonicseries();
+                    Harmonic.harmonicseries();
 
                     break;
                 case 6:
-                    factors.factornumber();
+                    Factors.factornumber();
                     break;
 
                 case 7:
-                    gambling.gambler();
+                    Gambling.gambler();
                     break;
                 case 8:
                    
-                    couponnumber.coupon();
+                    CouponNumber.coupon();
 
                     break;
-                
-                
-                
+                case 9:
+                    TwoDimension.twodim();
+                    break;
+                case 10:
+                    ArrayTriplet.triplets();
+                    break;
+                case 11:
+                    Distance distance = new Distance();
+                    distance.origintopoint();
+                    break;
+                case 12:
+                    Quadratic quadratic = new Quadratic();
+                    quadratic.rootsOfEquation();
+                    break;
+                case 13:
+                    Windchill windChill = new Windchill();
+                    windChill.temperaturetofarhenhit();
+                    break;
+                case 14:
+                    StopWatch stopwatch = new StopWatch();
+                        break;
+                case 15:
+                    VendingMachine vendingMachine = new VendingMachine();
+                    vendingMachine.CurrencyNotes();
+
+                    break;
+                case 16:
+                    DayOfWeek dayOfWeek = new DayOfWeek();
+                    dayOfWeek.daysofweek();
+                    break;
+                case 17:
+                    TemperatureConversion temperatureConversion = new TemperatureConversion();
+                    temperatureConversion.temperaturecoversion();
+                    break;
+
                 default:
                     break;
             }

@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace FunctionalPrograms
 {
     class Utility
     {
-        public static int userInputs()
+
+        public static int userInputs()  
         {
 
-            return int.Parse(Console.ReadLine());
+            return  int.Parse(Console.ReadLine());
         }
         public static void checkwin(int wins, int trails)
         {
@@ -28,7 +30,7 @@ namespace FunctionalPrograms
             }
 
         }
-        public static void shuffle(double[,] arr,int m,int n)
+        public static void shuffle(double[,] arr, int m, int n)
         {
             int c = 0;
             int count = 0;
@@ -73,16 +75,48 @@ namespace FunctionalPrograms
                 count++;
             }
 
-                if(count<m*n)
-                {
-                    shuffle(arr,m,n);
-                }
-              
-                }
-            
+            if (count < m * n)
+            {
+                shuffle(arr, m, n);
+            }
+
         }
 
-       
-        
+        public static void insertelements(int[] arr, int n)
+        {
+            for (int i = 0; i < n - 2; i++)
+            {
+                for (int j = 0; j < n - 1; j++)
+                {
+                    for (int k = 0; k < n; k++)
+                    {
+                        if (arr[i] + arr[j] + arr[k] == 0)
+                        {
+                            Console.WriteLine(arr[i] + " ");
+                            Console.WriteLine(arr[j] + " ");
+                            Console.WriteLine(arr[k] + " ");
+                        }
+
+
+
+
+                    }
+                }
+
+            }
+
+
+
+
+        }
+          public static Char UsercharInput()
+          {
+            Console.WriteLine("enter the character :");
+            return Console.ReadLine()[0];
+
+           }
+
     }
+}
+
 
