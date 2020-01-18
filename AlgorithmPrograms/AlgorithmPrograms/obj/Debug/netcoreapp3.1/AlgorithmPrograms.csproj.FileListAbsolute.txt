@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\bin\Debug\netcoreapp3.1\AlgorithmPrograms.exe
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\bin\Debug\netcoreapp3.1\AlgorithmPrograms.deps.json
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\bin\Debug\netcoreapp3.1\AlgorithmPrograms.runtimeconfig.json
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\bin\Debug\netcoreapp3.1\AlgorithmPrograms.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\bin\Debug\netcoreapp3.1\AlgorithmPrograms.dll
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\bin\Debug\netcoreapp3.1\AlgorithmPrograms.pdb
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\obj\Debug\netcoreapp3.1\AlgorithmPrograms.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\obj\Debug\netcoreapp3.1\AlgorithmPrograms.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\obj\Debug\netcoreapp3.1\AlgorithmPrograms.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\obj\Debug\netcoreapp3.1\AlgorithmPrograms.dll
+C:\Users\LENOVO\source\repos\AlgorithmPrograms\AlgorithmPrograms\obj\Debug\netcoreapp3.1\AlgorithmPrograms.pdb
