@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\bin\Debug\netcoreapp3.1\Datastructure.exe
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\bin\Debug\netcoreapp3.1\Datastructure.deps.json
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\bin\Debug\netcoreapp3.1\Datastructure.runtimeconfig.json
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\bin\Debug\netcoreapp3.1\Datastructure.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\bin\Debug\netcoreapp3.1\Datastructure.dll
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\bin\Debug\netcoreapp3.1\Datastructure.pdb
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\obj\Debug\netcoreapp3.1\Datastructure.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\obj\Debug\netcoreapp3.1\Datastructure.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\obj\Debug\netcoreapp3.1\Datastructure.dll
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\obj\Debug\netcoreapp3.1\Datastructure.pdb
+C:\Users\LENOVO\source\repos\Datastructure\Datastructure\obj\Debug\netcoreapp3.1\Datastructure.csprojAssemblyReference.cache
