@@ -4,16 +4,15 @@ using System.Text;
 
 namespace DataStructure
 {
-    class Node<T>
+    class Node1
     {
         public Object Data;
-        public Node<T> next;
-        public Node<T> prev;
-        public Node<T> Left;
-        public Node<T> Right;
-        public Node(T Data)
+        public Node1 next;
+        public Node1 prev;
+        public Node1 Left;
+        public Node1 Right;
+        public Node1(int Data)
         {
-
             this.Data = Data;
             this.next = null;
             this.Left = null;

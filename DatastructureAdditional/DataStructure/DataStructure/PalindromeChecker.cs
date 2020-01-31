@@ -8,10 +8,18 @@ namespace DataStructure
     {
         public void Palindrome()
         {
-            Dequeue dequeue = new Dequeue();
+            Dequeue<char> dequeue = new Dequeue<char>();
             Console.WriteLine("enter the string to add to  dequeue");
             string item = Utility.stringinput();
-            dequeue.Addstring(item);
+            char[] array = item.ToCharArray();
+            for (int index = 0; index < array.Length; index++)
+            {
+                dequeue.AddRear(array[index]);
+              ////  dequeue.AddFront(array[index]);
+            }
+            Console.WriteLine( dequeue.IsPalindrome());
+            
+
 
 
         }
