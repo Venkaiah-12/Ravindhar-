@@ -1,0 +1,34 @@
+{
+  "AddressBook": 
+  [
+    {
+
+      "FirstName": "Ravindhar",
+      "LastName": "Nalagati",
+      "Village": "Kusumanchi",
+      "Mandal": "Kususmanchi",
+      "District": "Khammam",
+      "city": "Hyderbad",
+      "State": " Telangana",
+        "PinCode":507159,
+
+    },
+    {
+
+      "FirstName ": "Venu",
+      "LastName": "Bandi",
+      "Village": "Malakpet",
+      "Mandal": "Athamakur",
+      "District": "Warangal",
+      "city": "Hyderabad",
+      "State": " Telangana",
+      "PinCode" : 506342,
+    }
+
+    
+  ] 
+
+}
+
+
+
