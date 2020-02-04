@@ -15,8 +15,9 @@ namespace ObjectOrientedPrograms
             Console.WriteLine("Press 2 : Inventory Data");
             Console.WriteLine("Press 3 : Inventory Management");
             ////this variable getting user integerinput
+            Console.WriteLine("Enetr the choice ");
             int choice = Convert.ToInt32(Console.ReadLine());
-
+            
             switch(choice)
             {
                 case 1:

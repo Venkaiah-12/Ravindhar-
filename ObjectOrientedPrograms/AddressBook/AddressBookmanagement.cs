@@ -10,42 +10,8 @@ using Newtonsoft.Json.Linq;
 namespace ObjectOrientedPrograms.AddressBook
 {
     class AddressBookmanagement
-    {/// <summary>
-    /// this string variable take the data from string 
-    /// </summary>
+    {
         string filepath = @"C:\Users\Bridge Labs\source\repos\ObjectOrientedPrograms\ObjectOrientedPrograms\AddressBook\AddressBookFile.json";
-        public object State { get; private set; }
-        /// <summary>
-        /// this variable set firstname addressbook
-        /// </summary>
-        public object FirstName { get; private set; }
-        /// <summary>
-        /// this variable set lastname to addressbook
-        /// </summary>
-        public object LastName { get; private set; }
-        /// <summary>
-        /// this variable set Village to addressbook
-        /// </summary>
-        public object Village { get; private set; }
-        /// <summary>
-        /// this variable set mandal to addressbook
-        /// </summary>
-        public object Mandal { get; private set; }
-        /// <summary>
-        /// this variable set district to addressbook
-        /// </summary>
-        public object District { get; private set; }
-        /// <summary>
-        /// this variable set city to addressbook
-        /// </summary>
-        public object City { get; private set; }
-        /// <summary>
-        /// this variable set pincode to addressbook 
-        /// </summary>
-        public object PinCode { get; private set; }
-        /// <summary>
-        /// calling function get user details
-        /// </summary>
         public void UserDetails()
         {
             try
@@ -105,18 +71,32 @@ namespace ObjectOrientedPrograms.AddressBook
                 string State = Utility.StringInput();
                 Console.WriteLine("Enter the PinCode");
                 var PinCode = int.Parse(Console.ReadLine());
+                var jsonfile = File.ReadAllText(filepath);
+                var jsonObject = JObject.Parse(jsonfile);
+                JArray personarray = (JArray)jsonObject["AddressBook"];
+                JObject adddingitem = new JObject
+                {
+                    {"FirstName",FirstName},
+                    {"LastName",LastName },
+                    {"Village",Village },
+                    {"Mandal",Mandal },
+                    {"District",District },
+                    {"City",City },
+                    {"State",State },
+                    {"PinCode",PinCode }
+
+                };
+                personarray.Add(adddingitem);
                 ////
                 ///reteriving data from user and setting them in array format 
-                var newItem = "{ 'firstName': '" + FirstName + "','lastName':'" + LastName + "','Village':'" + Village + "','State':'" + State + "','City':'" + City + "','Mandal':" + Mandal + ",'PinCode':" + PinCode + "}";
+              /*  var newItem = "{ 'firstName': '" + FirstName + "','lastName':'" + LastName + "','Village':'" + Village + "','State':'" + State + "','City':'" + City + "','Mandal':" + Mandal + ",'PinCode':" + PinCode + "}";
                 var jsonfile = File.ReadAllText(filepath);
                 var jsonObject = JObject.Parse(jsonfile);
                 var itemarray = jsonObject.GetValue(itemname) as JArray;
-                var newItemObject = JObject.Parse(newItem);
+                var newItemObject = JObject.Parse(newItem);*/
                 ////performing add operation 
-                itemarray.Add(newItemObject);
-                Console.WriteLine(itemarray);
-                jsonObject[itemname] = itemarray;
-                string newJsonResult = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
+              
+                string newJsonResult = JsonConvert.SerializeObject(personarray, Formatting.Indented);
                 File.WriteAllText(this.filepath, newJsonResult);
             }
             catch (Exception e)

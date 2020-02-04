@@ -7,8 +7,8 @@ namespace ObjectOrientedPrograms.AddressBook
 {
     class AddressBookData
     {/// <summary>
-    /// calling function performing crud operations on json file
-    /// </summary>
+     /// calling function performing crud operations on json file
+     /// </summary>
         public void addressBook()
         {
             AddressBookmanagement addressBookmanagement = new AddressBookmanagement();
@@ -20,7 +20,7 @@ namespace ObjectOrientedPrograms.AddressBook
             Console.WriteLine("Enter your choice");
             ///Calling function to get user input
             int choice = Utility.IntegerInput();
-            switch(choice)
+            switch (choice)
             {
                 case 1:
                     ///calling function to get userdetails
@@ -35,7 +35,7 @@ namespace ObjectOrientedPrograms.AddressBook
                     Console.WriteLine("enter the valid option");
                     break;
 
-                   
+
             }
         }
     }
