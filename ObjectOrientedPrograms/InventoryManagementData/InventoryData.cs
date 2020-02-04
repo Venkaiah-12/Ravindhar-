@@ -14,12 +14,16 @@ namespace ObjectOrientedPrograms.InventoryManagementData
         /*    public int Rices { get; set; }
             public int Pulses { get; set; }
             public int Wheats { get; set; }*/
+            /// <summary>
+            /// calling function to get the user data
+            /// </summary>
         string jsonFile = @"C:\Users\Bridge Labs\source\repos\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagement\Inventory.json";
         public void GetUserDetails()
         {
             var json = File.ReadAllText(jsonFile);
             try
             {
+                ////parsing string into objecting
                 var JsonObject = JObject.Parse(json);
                 if(JsonObject != null)
                 {
@@ -68,7 +72,9 @@ namespace ObjectOrientedPrograms.InventoryManagementData
             {
                 Console.WriteLine(e.Message);
             }
-        }
+        }/// <summary>
+        /// calling function to add item in json file
+        /// </summary>
         public void AddItem()
         {
           //  var json = File.ReadAllText(jsonFile);
@@ -80,6 +86,7 @@ namespace ObjectOrientedPrograms.InventoryManagementData
             var price = Console.ReadLine();
             Console.WriteLine("enter the weight");
             var weight = Console.ReadLine();
+            ////setting the user data in array format present in json file
             var newItem = "{ 'name': '" + itemtypename + "','price':" + price + ",'weight':" + weight + "}";
             var json = File.ReadAllText(this.jsonFile);
             var jsonObject = JObject.Parse(json);
@@ -89,11 +96,14 @@ namespace ObjectOrientedPrograms.InventoryManagementData
             itemArray.Add(newitemObject);
             Console.WriteLine("item array :" + itemArray);
             jsonObject[itemname] = itemArray;
+            ////converting string file data into object data
             string newJsonResult = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
             File.WriteAllText(this.jsonFile, newJsonResult);
 
 
-        }
+        }/// <summary>
+        /// calling funcrion to update the data in the json file 
+        /// </summary>
         public void UpdateFile()
         {
             string json = File.ReadAllText(this.jsonFile);
@@ -107,22 +117,28 @@ namespace ObjectOrientedPrograms.InventoryManagementData
                 var itemName = Console.ReadLine();
                 Console.Write("Enter new Item name : ");
                 var newItemName = Convert.ToString(Console.ReadLine());
-
+                /////comparing value which data to compare 
                 foreach (var item in riceArrary.Where(obj => obj["name"].Value<string>().Equals(itemName)))
                 {
+                    ////using ternary operator to true or false 
                     item["name"] = !string.IsNullOrEmpty(newItemName) ? newItemName : string.Empty;
                 }
 
                 jsonObject["name"] = riceArrary;
+                /////serializing the data to object
                 string output = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
                 File.WriteAllText(this.jsonFile, output);
                 Console.WriteLine(newItemName + " is Updated on " + itemName);
             }
+            ////calling expection which type is data is used
             catch (Exception exception)
             {
                 Console.WriteLine("Update Error : " + exception.Message.ToString());
             }
         }
+        /// <summary>
+        /// calling function to delete item 
+        /// </summary>
         public void DeleteItem()
         {
             string  json = File.ReadAllText(this.jsonFile);
@@ -135,7 +151,9 @@ namespace ObjectOrientedPrograms.InventoryManagementData
                 JArray itemArray = (JArray)jsonObject[itemname];
                 Console.WriteLine("Enter the item tyoe to be deleted");
                 var itemtypetodelete = Console.ReadLine();
+                ////here  it compare the data and if find delete the item 
                 var itemtoDeleted = itemArray.FirstOrDefault(obj => obj["name"].Value<string>().Equals(itemtypetodelete));
+                ////removing item from json file
                 itemArray.Remove(itemtypetodelete);
                 string Resultoutput = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
                 File.WriteAllText(jsonFile, Resultoutput);

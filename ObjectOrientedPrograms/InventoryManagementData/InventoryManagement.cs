@@ -11,13 +11,21 @@ namespace ObjectOrientedPrograms.InventoryManagementData
   
     class InventoryManagement
     {
-       
+       /// <summary>
+       /// this variable set Rice 
+       /// </summary>
         public IList<Rice> Rice { set; get; }
+        /// <summary>
+        /// this variable set pulses we can access any where
+        /// </summary>
         public IList<Pulses> Pulses
         {
             set;
             get;
         }
+        /// <summary>
+        /// this variable set wheats 
+        /// </summary>
         public IList<Wheats> Wheats { set; get; }
         public static  void Inventorymanagement()
         {
@@ -37,6 +45,7 @@ namespace ObjectOrientedPrograms.InventoryManagementData
                     string name = objerice.Name;
                     double price = objerice.Price;
                     double weight = objerice.Weight;
+                    ////calculating totalriceprice 
                     totalriceprice = totalriceprice + price * weight;
                     Console.WriteLine("objerice name" + name);
                     Console.WriteLine("objerice price" + price);
@@ -47,6 +56,7 @@ namespace ObjectOrientedPrograms.InventoryManagementData
                     string name = objepulses.Name;
                     double price = objepulses.Price;
                     double weight = objepulses.Weight;
+                    ////calculating totalpulseprice
                     totalpulsesprice = totalpulsesprice + price * weight;
                     Console.WriteLine("objerpulses" + name);
                     Console.WriteLine("objecrpulses" + price);
@@ -57,6 +67,7 @@ namespace ObjectOrientedPrograms.InventoryManagementData
                     string name = objwheats.Name;
                     double price = objwheats.Price;
                     double weight = objwheats.Weight;
+                    ////calculating totalwheatsprice
                     totalwheatprice = totalwheatprice + price * weight;
                     Console.WriteLine("objewheats" + name);
                     Console.WriteLine("objewheats" + price);

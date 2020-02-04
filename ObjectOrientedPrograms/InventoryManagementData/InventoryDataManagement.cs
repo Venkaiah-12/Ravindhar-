@@ -5,7 +5,9 @@ using ObjectOrientedPrograms.InventoryManagementData;
 namespace ObjectOrientedPrograms.InventoryManagementData
 {
     class InventoryDataManagement
-    {
+    {/// <summary>
+    /// calling function to perform crud operationson switch case
+    /// </summary>
         public void Inventorydatamanagement()
         {
             InventoryData inventoryData = new InventoryData();
@@ -19,19 +21,24 @@ namespace ObjectOrientedPrograms.InventoryManagementData
             switch (choice)
             {
                 case 1:
+                    ////calling function to getuserdetails
                     inventoryData.GetUserDetails();
                     break;
                 case 2:
+                    ////calling function to add item
                     inventoryData.AddItem();
                     break;
                 case 3:
+                    ////calling function to update item
                     inventoryData.UpdateFile();
                     break;
                 case 4:
+                    ////calling function to deleteitem
                     inventoryData.DeleteItem();
                     break;
 
                 default:
+                    ////if invalid option enter by user it will ask to enter the option
                     Console.WriteLine("enter the valid option");
                     break;
 
